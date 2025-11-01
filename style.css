@@ -1,0 +1,126 @@
+/* --- BODY & APP --- */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 35px 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* --- CATEGORY SELECTOR --- */
+.category-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+#categoryIcon {
+  font-size: 30px;
+  color: #4CAF50;
+  transition: all 0.3s ease;
+}
+
+select {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  transition: border 0.3s ease;
+}
+
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* --- CONVERTER --- */
+.converter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.converter input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  width: 100px;
+  text-align: center;
+  transition: border 0.3s ease;
+}
+
+.converter input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.arrow {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.converter button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.converter button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* --- RESULT --- */
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  min-height: 28px;
+  transition: all 0.3s ease;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+  .converter {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .converter input, select, button {
+    width: 100%;
+  }
+}
