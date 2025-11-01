@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simsamo Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🔄 Simsamo Unit Converter</h1>
+
+    <div class="category-selector">
+      <label for="category">Select Category:</label>
+      <div class="category-with-icon">
+        <i id="categoryIcon" class="fas fa-ruler"></i>
+        <select id="category">
+          <option value="length">Length</option>
+          <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
+          <option value="speed">Speed</option>
+          <option value="area">Area</option>
+          <option value="volume">Volume</option>
+          <option value="time">Time</option>
+          <option value="energy">Energy</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="converter">
+      <input type="number" id="inputValue" placeholder="Value">
+      <select id="fromUnit"></select>
+      <span>→</span>
+      <select id="toUnit"></select>
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
